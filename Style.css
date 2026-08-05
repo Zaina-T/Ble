@@ -107,5 +107,18 @@ a {
 }
 /*end of headlines section*/
 
+@media screen and (min-width:0px) and (max-width:635px) {
+    .headlines .headline {
+        width: calc((100% - 20px)/2);
+    }
+}
+
+@media screen and (min-width:636px) and (max-width:735px) {
+    .headlines .headline {
+        width: calc((100% - 40px)/3);
+    }
+}
+
+
 
 
