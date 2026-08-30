@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+    --font-hanken-grotesk : "hanken grotesk";
+    --font-eb-garamond: "eb garamond";
+    --color-primary-green: #4A5D23;
+    --color-secondary-white: #F9F7F2;
+    --color-third-gray: #E8E4D8;
+    --color-fourth-black: #1A1A1A;
+    --color-background-fill: #FCF9F8;
+
+}
+
+.hanken-grotesk {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:400;
+  font-style: normal;
+}
+
+.eb-garamond {
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight:700;
+  font-style: normal;
+}
+
+

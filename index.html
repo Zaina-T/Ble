@@ -1,100 +1,72 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sports Insider</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./Style.css"> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link href="./output.css" rel="stylesheet">
 </head>
-<body>
-
-    <!-- start of header section -->
-   <div class="header">
-     <div class="container">
-        <div class="row">
-           <div class="logo">
-            <img src="./assets/logo.svg"/>
-          </div>
-    
-
-    <div class="list"> 
-        <ul>
-            <li>
-               <a href="#">FOOTBALL</a> 
-            </li>
-            <li>
-               <a href="#">BASKETBALL</a>  
-            </li>
-            <li>
-               <a href="#">F1</a>  
-            </li>
-            <li>
-               <a href="#">TENNIS</a>  
-            </li>
-            <li class="highlight">
-               <a href="#">NEWS</a>  
-            </li>
-        </ul>
-    </div>    
 
 
-    <div class="icons"> 
-        <ul>
+<body class="font-hanken-grotesk">
+ <header class="bg-background-fill py-2"> 
+    <div class="container mx-auto flex justify-between items-center">
+    <div class="logo">
+        <img src="./assests/header/Blé Logo.svg"> 
+    </div>
+
+    <div class="list">
+        <ul class="flex gap-10 text-primary-green">
             <li>
-                <a href="#">
-                   <img src="./assets/search_icon.svg"/>
-                </a>
-                <a href="#">
-                    <img src="./assets/account_icon.svg"/>
-                </a>
+                <a href="#">HOME</a>
+            </li>
+            <li>
+                <a href="#">FRESH BREAD</a>
+            </li>
+            <li>
+                <a href="#">PASTRIES</a>
+            </li>
+            <li>
+                <a href="#">COOKIES</a>
+            </li>
+            <li>
+                <a href="#">CAKES</a>
             </li>
         </ul>
     </div>
-       </div>
-     </div>
-   </div>
-    <!-- end of header section -->
 
-    <!-- start of headlines section -->
-   <div class="headlines">
-     <div class="container">
-        <h2 class="headline">FEATURED STORIES</h2>
-        <div class="row">
-            <div class="headline">
-              <img src="./assets/Football.jpg"/>
-              <h3>Spain Wins 2026 World Cup</h3>
-              <p>Spain defeat Argentina 1–0 in the final to lift their second World Cup trophy.</p>
-            </div>
 
-            <div class="headline">
-              <img src="./assets/Basketball.jpg">
-              <h3>LeBron James Joins the 76ers</h3>
-              <p>The NBA legend agrees to a two-year, $100M contract with Philadelphia.</p>
-            </div>
+    <div class="icons">
+        <ul class="flex gap-6">
+            <li>
+                <a href="#">
+                     <i class="fa-solid fa-cart-shopping" style="color: rgb(51, 69, 13);"></i> 
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-user" style="color: rgb(51, 69, 13);"></i>
+                 </a>
+            </li>
+        </ul>
+    </div>
 
-            <div class="headline">
-              <img src="./assets/F1.jpg"/>
-              <h3>Leclerc Wins the British GP</h3>
-              <p>Leclerc secures his first British GP victory for Ferrari at Silverstone.</p>
-            </div>
+    </div>
 
-            <div class="headline">
-              <img src="./assets/Tennis.jpg">
-              <h3>Sinner Wins Wimbledon</h3>
-              <p>Jannik Sinner defeats Alexander Zverev to claim another Grand Slam trophy.</p>
-            </div>
+ </header>
 
-        </div> 
-     </div>
-   </div>
-     <!-- end of headlines section -->
-    
+
+
+
+
+
+
+
+
+
 
 
 </body>
