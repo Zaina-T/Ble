@@ -9,6 +9,8 @@
     --color-fourth-black: #1A1A1A;
     --color-background-fill: #FCF9F8;
     --color-hero-filling: #1C1B1B;
+    --color-price:#45483C;
+    --color-cartButton: #F0EDED;
 
 }
 
@@ -26,9 +28,6 @@
   font-style: normal;
 }
 
-h1 {
-    @apply font-eb-garamond;
-}
 
 .hero_heading {
     @apply absolute font-bold text-white text-5xl
@@ -39,6 +38,67 @@ h1 {
            max-[440px]:text-lg
            max-[370px]:text-base;
 }
+
+.container {
+    @apply mx-auto;
+}
+
+.row {
+    @apply flex;
+    @apply items-center;
+}
+
+@layer base {
+
+h1 {
+ @apply font-eb-garamond;
+ @apply font-normal;
+ @apply text-base;
+ @apply text-fourth-black;
+}
+
+h2 {
+    @apply font-eb-garamond
+    @apply font-bold;
+    @apply text-base;
+    @apply text-fourth-black;
+}
+
+h3 {
+    @apply font-eb-garamond
+    @apply font-normal;
+    @apply text-base;
+    @apply text-fourth-black;
+}
+}
+
+.favorites img {
+    @apply pb-6;
+    @apply rounded-xl;
+}
+
+.price {
+    @apply font-hanken-grotesk
+    font-normal
+    text-base
+    text-price
+    ml-auto;
+}
+
+button {
+    @apply cursor-pointer;
+    @apply flex justify-center items-center;
+    @apply bg-cartButton;
+    @apply font-hanken-grotesk;
+    @apply font-normal;
+    @apply text-base;
+    @apply text-hero-filling;
+    @apply w-55.5 h-12;
+    @apply tracking-[0.8px];
+    @apply mx-auto;
+    @apply rounded-xs;
+}
+
 
 
 
