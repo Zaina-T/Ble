@@ -12,14 +12,23 @@
 
 
 <body class="font-hanken-grotesk">
- <header class="bg-background-fill py-2"> 
-    <div class="container mx-auto flex justify-between items-center">
-    <div class="logo">
+
+<!--Start of Header section-->  
+<header class="bg-background-fill py-2"> 
+    <div class="container mx-auto flex justify-between items-center ">
+
+    <div class="menu hidden max-[480px]:block">
+        <a href="#">
+            <i class="fa-solid fa-bars" style="color: rgb(51, 69, 13);"></i>
+        </a>
+    </div>   
+
+    <div class="logo max-[480px]:mx-auto">
         <img src="./assests/header/Blé Logo.svg"> 
     </div>
 
     <div class="list">
-        <ul class="flex gap-10 text-primary-green">
+        <ul class="flex gap-10 text-primary-green max-[620px]:gap-4 max-[620px]:text-sm max-[480px]:hidden">
             <li>
                 <a href="#">HOME</a>
             </li>
@@ -53,10 +62,10 @@
             </li>
         </ul>
     </div>
+  </div>
+</header>
+<!--End of Header section-->
 
-    </div>
-
- </header>
 
 
 
