@@ -8,6 +8,7 @@
     --color-third-gray: #E8E4D8;
     --color-fourth-black: #1A1A1A;
     --color-background-fill: #FCF9F8;
+    --color-hero-filling: #1C1B1B;
 
 }
 
@@ -25,7 +26,19 @@
   font-style: normal;
 }
 
+h1 {
+    @apply font-eb-garamond;
+}
 
+.hero_heading {
+    @apply absolute font-bold text-white text-5xl
+           max-[985px]:text-4xl
+           max-[750px]:text-3xl
+           max-[620px]:text-2xl
+           max-[530px]:text-xl
+           max-[440px]:text-lg
+           max-[370px]:text-base;
+}
 
 
 
