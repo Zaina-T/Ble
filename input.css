@@ -52,20 +52,20 @@
 
 h1 {
  @apply font-eb-garamond;
- @apply font-normal;
- @apply text-base;
+ @apply font-bold;
+ @apply text-4xl;
  @apply text-fourth-black;
 }
 
 h2 {
-    @apply font-eb-garamond
+    @apply font-eb-garamond;
     @apply font-bold;
     @apply text-base;
     @apply text-fourth-black;
 }
 
 h3 {
-    @apply font-eb-garamond
+    @apply font-eb-garamond;
     @apply font-normal;
     @apply text-base;
     @apply text-fourth-black;
@@ -97,6 +97,39 @@ button {
     @apply tracking-[0.8px];
     @apply mx-auto;
     @apply rounded-xs;
+}
+
+.tag_position {
+   @apply absolute top-4 left-4;
+}
+
+.tag_details {
+  @apply font-hanken-grotesk
+   font-normal
+   text-base
+   text-fourth-black
+   tracking-[0.8px]
+   rounded-xl
+   px-3 py-1
+   bg-background-fill;
+}
+
+.cards_display {
+    @apply grid grid-cols-4  
+    max-[1025px]:grid-cols-3 gap-8
+    max-[770px]:grid-cols-2 
+    max-[590px]:grid-cols-1;
+
+    .add_to_cart button {
+        @apply max-[1025px]:w-50;
+        @apply max-[1025px]:h-10; 
+        @apply max-[1025px]:text-sm;}
+
+    .fav_name h3 {
+        @apply max-[1025px]:text-sm;}
+
+    .price p {
+        @apply max-[1025px]:text-sm;}
 }
 
 
