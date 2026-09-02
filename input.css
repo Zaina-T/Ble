@@ -11,6 +11,7 @@
     --color-hero-filling: #1C1B1B;
     --color-price:#45483C;
     --color-cartButton: #F0EDED;
+    --color-image-background:#33450D;
 
 }
 
@@ -132,6 +133,51 @@ button {
         @apply max-[1025px]:text-sm;}
 }
 
+.special_header p {
+    @apply font-hanken-grotesk text-base font-normal text-primary-green tracking-[3.2px];
+}
 
+.special_name h2 {
+    @apply font-eb-garamond font-bold text-base;
+}
 
+.special_description_det {
+    @apply pt-8 w-lg h-19.5;
+}
 
+.special_description p {
+    @apply font-hanken-grotesk text-price;
+}
+
+.order_now_details {
+    @apply mt-8 w-42.75 h-16 pt-8;}
+
+.order_now button {
+    @apply bg-primary-green text-amber-50 tracking-[1.6px];
+}
+
+.photo::before {
+    content: "";
+    @apply absolute
+    w-123 h-112
+    top-8 left-8
+    rounded-xl
+    bg-image-background/10
+    blur-3xl
+    -z-10;
+}
+
+.photo::after {
+    content: "";
+    @apply absolute inset-0 bg-white/20
+    w-md h-md 
+    left-20 top-0
+    rounded-2xl
+    -z-10;
+}
+
+.photo img {
+    @apply relative z-10
+           rounded-2xl
+           shadow-[0_20px_25px_-5px_rgba(0,0,0,0.10),0_8px_10px_-6px_rgba(0,0,0,0.10)];
+}
