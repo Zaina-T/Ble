@@ -46,6 +46,7 @@
     --color-cartButton: #F0EDED;
     --color-image-background: #33450D;
     --color-special-background: #F6F3F2;
+    --color-line: #BED58E;
   }
 }
 @layer base {
@@ -236,11 +237,17 @@
   .hidden {
     display: none;
   }
+  .h-\[64px\] {
+    height: 64px;
+  }
   .h-px {
     height: 1px;
   }
   .w-8 {
     width: calc(var(--spacing) * 8);
+  }
+  .w-\[64px\] {
+    width: 64px;
   }
   .w-full {
     width: 100%;
@@ -257,6 +264,9 @@
   .justify-center {
     justify-content: center;
   }
+  .gap-2 {
+    gap: calc(var(--spacing) * 2);
+  }
   .gap-5 {
     gap: calc(var(--spacing) * 5);
   }
@@ -265,6 +275,19 @@
   }
   .gap-10 {
     gap: calc(var(--spacing) * 10);
+  }
+  .gap-\[32px\] {
+    gap: 32px;
+  }
+  .border-t {
+    border-top-style: var(--tw-border-style);
+    border-top-width: 1px;
+  }
+  .border-line\/20 {
+    border-color: color-mix(in srgb, #BED58E 20%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-line) 20%, transparent);
+    }
   }
   .bg-background-fill {
     background-color: var(--color-background-fill);
@@ -302,6 +325,15 @@
   .pb-30 {
     padding-bottom: calc(var(--spacing) * 30);
   }
+  .pb-\[12px\] {
+    padding-bottom: 12px;
+  }
+  .pb-\[32px\] {
+    padding-bottom: 32px;
+  }
+  .pb-\[48px\] {
+    padding-bottom: 48px;
+  }
   .pb-\[120px\] {
     padding-bottom: 120px;
   }
@@ -313,6 +345,9 @@
   }
   .text-primary-green {
     color: var(--color-primary-green);
+  }
+  .opacity-\[60\%\] {
+    opacity: 60%;
   }
   @media (width < 620px) {
     .max-\[620px\]\:gap-4 {
@@ -594,6 +629,22 @@ button {
   --tw-shadow: 0 20px 25px -5px var(--tw-shadow-color, rgba(0,0,0,0.10)), 0 8px 10px -6px var(--tw-shadow-color, rgba(0,0,0,0.10));
   box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
 }
+.footer_details {
+  background-color: var(--color-primary-green);
+  padding-top: 120px;
+}
+.informations p {
+  align-items: flex-start;
+  font-family: var(--font-hanken-grotesk);
+  color: var(--color-white);
+}
+.copyrights p {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 32px;
+  color: var(--color-white);
+  opacity: 50%;
+}
 @property --tw-rotate-x {
   syntax: "*";
   inherits: false;
@@ -613,6 +664,11 @@ button {
 @property --tw-skew-y {
   syntax: "*";
   inherits: false;
+}
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
 }
 @property --tw-font-weight {
   syntax: "*";
@@ -748,6 +804,7 @@ button {
       --tw-rotate-z: initial;
       --tw-skew-x: initial;
       --tw-skew-y: initial;
+      --tw-border-style: solid;
       --tw-font-weight: initial;
       --tw-tracking: initial;
       --tw-blur: initial;

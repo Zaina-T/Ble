@@ -13,6 +13,7 @@
     --color-cartButton: #F0EDED;
     --color-image-background:#33450D;
     --color-special-background:#F6F3F2; 
+    --color-line:#BED58E;
 
 }
 
@@ -188,4 +189,16 @@ button {
     @apply bg-background-fill rounded-xl text-primary-green flex items-center justify-center pb-[4px] flex-col;
     @apply shadow-[0_20px_25px_-5px_rgba(0,0,0,0.10),0_8px_10px_-6px_rgba(0,0,0,0.10)];
     
+}
+
+.footer_details {
+    @apply pt-[120px] bg-primary-green;
+}
+
+.informations p {
+    @apply font-hanken-grotesk text-white items-start;
+}
+
+.copyrights p {
+    @apply flex justify-center opacity-[50%] text-white pb-[32px];
 }
