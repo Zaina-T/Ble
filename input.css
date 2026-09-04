@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-    --font-hanken-grotesk : "hanken grotesk";
-    --font-eb-garamond: "eb garamond";
+    --font-hanken-grotesk:"hanken grotesk";
+    --font-eb-garamond:"eb garamond";
     --color-primary-green: #4A5D23;
     --color-secondary-white: #F9F7F2;
     --color-third-gray: #E8E4D8;
@@ -12,6 +12,7 @@
     --color-price:#45483C;
     --color-cartButton: #F0EDED;
     --color-image-background:#33450D;
+    --color-special-background:#F6F3F2; 
 
 }
 
@@ -169,15 +170,22 @@ button {
 
 .photo::after {
     content: "";
-    @apply absolute inset-0 bg-white/20
-    w-md h-md 
-    left-20 top-0
-    rounded-2xl
-    -z-10;
+    @apply absolute inset-0 bg-white/20;
+    @apply w-[300px] h-[300px]; 
+    @apply left-20 top-0;
+    @apply rounded-2xl;
+    @apply -z-10;
 }
 
 .photo img {
     @apply relative z-10
            rounded-2xl
            shadow-[0_20px_25px_-5px_rgba(0,0,0,0.10),0_8px_10px_-6px_rgba(0,0,0,0.10)];
+}
+
+.floating_tag_details {
+    @apply absolute right-full bottom-10 w-[112px] h-[112px];
+    @apply bg-background-fill rounded-xl text-primary-green flex items-center justify-center pb-[4px] flex-col;
+    @apply shadow-[0_20px_25px_-5px_rgba(0,0,0,0.10),0_8px_10px_-6px_rgba(0,0,0,0.10)];
+    
 }
