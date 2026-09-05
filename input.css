@@ -217,3 +217,28 @@ button {
 .logo_responsive {
     @apply max-[560px]:w-[55px] h-[55px];
 }
+
+.Bread_intro h1 {
+    @apply font-eb-garamond 
+    text-primary-green
+    pb-6
+    font-bold
+    text-base
+    tracking-[1px];
+}
+
+.Bread_intro p {
+    @apply w-[565.25px] h-12
+    font-hanken-grotesk
+    text-price;
+}
+
+.sort button {
+    @apply w-12 h-12 p-0 bg-white;
+    
+}
+
+.Bread_intro_details {
+    @apply pt-32 pb-30;
+  
+}
