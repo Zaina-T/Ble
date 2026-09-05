@@ -33,6 +33,7 @@
     --font-weight-normal: 400;
     --font-weight-bold: 700;
     --radius-xs: 0.125rem;
+    --radius-lg: 0.5rem;
     --radius-xl: 0.75rem;
     --radius-2xl: 1rem;
     --blur-3xl: 64px;
@@ -257,6 +258,9 @@
   .w-16 {
     width: calc(var(--spacing) * 16);
   }
+  .w-88 {
+    width: calc(var(--spacing) * 88);
+  }
   .w-full {
     width: 100%;
   }
@@ -339,9 +343,6 @@
   .pb-30 {
     padding-bottom: calc(var(--spacing) * 30);
   }
-  .pb-\[12px\] {
-    padding-bottom: 12px;
-  }
   .font-eb-garamond {
     font-family: var(--font-eb-garamond);
   }
@@ -352,9 +353,6 @@
     color: var(--color-primary-green);
   }
   .opacity-60 {
-    opacity: 60%;
-  }
-  .opacity-\[60\%\] {
     opacity: 60%;
   }
   @media (width < 620px) {
@@ -682,8 +680,8 @@ button {
 .Bread_intro h1 {
   padding-bottom: calc(var(--spacing) * 6);
   font-family: var(--font-eb-garamond);
-  font-size: var(--text-base);
-  line-height: var(--tw-leading, var(--text-base--line-height));
+  font-size: var(--text-2xl);
+  line-height: var(--tw-leading, var(--text-2xl--line-height));
   --tw-font-weight: var(--font-weight-bold);
   font-weight: var(--font-weight-bold);
   --tw-tracking: 1px;
@@ -705,6 +703,36 @@ button {
 .Bread_intro_details {
   padding-top: calc(var(--spacing) * 32);
   padding-bottom: calc(var(--spacing) * 30);
+}
+.bread_cards_display {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: calc(var(--spacing) * 6);
+  @media (width < 1025px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  @media (width < 770px) {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  padding-inline: calc(var(--spacing) * 16);
+}
+.card img {
+  border-radius: var(--radius-lg);
+  --tw-shadow: 0 1px 2px 0 var(--tw-shadow-color, rgba(0,0,0,0.5));
+  box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+}
+.bread_description p {
+  margin-inline: auto;
+  display: flex;
+  height: calc(var(--spacing) * 12);
+  width: calc(var(--spacing) * 88);
+  color: var(--color-price);
+  height: calc(var(--spacing) * 10);
+  width: calc(var(--spacing) * 85);
+  @media (width < 1025px) {
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
 }
 @property --tw-rotate-x {
   syntax: "*";
