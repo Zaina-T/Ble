@@ -201,4 +201,19 @@ button {
 
 .copyrights p {
     @apply flex justify-center opacity-[50%] text-white pb-[32px];
+    @apply max-[620px]:text-sm;
+
+}
+
+.info_details {
+    @apply flex justify-between gap-[32px];
+    @apply max-[770px]:text-sm;
+    @apply max-[620px]:text-xs;
+    @apply max-[560px]:gap-[20px];
+
+    
+}
+
+.logo_responsive {
+    @apply max-[560px]:w-[55px] h-[55px];
 }

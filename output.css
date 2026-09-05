@@ -12,6 +12,8 @@
     --color-white: #fff;
     --spacing: 0.25rem;
     --container-lg: 32rem;
+    --text-xs: 0.75rem;
+    --text-xs--line-height: calc(1 / 0.75);
     --text-sm: 0.875rem;
     --text-sm--line-height: calc(1.25 / 0.875);
     --text-base: 1rem;
@@ -237,6 +239,9 @@
   .hidden {
     display: none;
   }
+  .table {
+    display: table;
+  }
   .h-\[64px\] {
     height: 64px;
   }
@@ -252,8 +257,14 @@
   .w-full {
     width: 100%;
   }
+  .border-collapse {
+    border-collapse: collapse;
+  }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+  }
+  .resize {
+    resize: both;
   }
   .items-center {
     align-items: center;
@@ -276,12 +287,16 @@
   .gap-10 {
     gap: calc(var(--spacing) * 10);
   }
-  .gap-\[32px\] {
-    gap: 32px;
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
   }
   .border-t {
     border-top-style: var(--tw-border-style);
     border-top-width: 1px;
+  }
+  .border-line {
+    border-color: var(--color-line);
   }
   .border-line\/20 {
     border-color: color-mix(in srgb, #BED58E 20%, transparent);
@@ -291,6 +306,9 @@
   }
   .bg-background-fill {
     background-color: var(--color-background-fill);
+  }
+  .bg-hero-filling {
+    background-color: var(--color-hero-filling);
   }
   .bg-hero-filling\/40 {
     background-color: color-mix(in srgb, #1C1B1B 40%, transparent);
@@ -346,10 +364,29 @@
   .text-primary-green {
     color: var(--color-primary-green);
   }
+  .underline {
+    text-decoration-line: underline;
+  }
   .opacity-\[60\%\] {
     opacity: 60%;
   }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
+  }
+  .filter {
+    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+  }
   @media (width < 620px) {
+    .max-\[620px\]\:w-1\/2 {
+      width: calc(1 / 2 * 100%);
+    }
+    .max-\[620px\]\:w-3 {
+      width: calc(var(--spacing) * 3);
+    }
+    .max-\[620px\]\:w-3\/4 {
+      width: calc(3 / 4 * 100%);
+    }
     .max-\[620px\]\:gap-4 {
       gap: calc(var(--spacing) * 4);
     }
@@ -644,6 +681,32 @@ button {
   padding-bottom: 32px;
   color: var(--color-white);
   opacity: 50%;
+  @media (width < 620px) {
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+}
+.info_details {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  @media (width < 770px) {
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+  @media (width < 620px) {
+    font-size: var(--text-xs);
+    line-height: var(--tw-leading, var(--text-xs--line-height));
+  }
+  @media (width < 560px) {
+    gap: 20px;
+  }
+}
+.logo_responsive {
+  height: 55px;
+  @media (width < 560px) {
+    width: 55px;
+  }
 }
 @property --tw-rotate-x {
   syntax: "*";
@@ -670,13 +733,10 @@ button {
   inherits: false;
   initial-value: solid;
 }
-@property --tw-font-weight {
+@property --tw-outline-style {
   syntax: "*";
   inherits: false;
-}
-@property --tw-tracking {
-  syntax: "*";
-  inherits: false;
+  initial-value: solid;
 }
 @property --tw-blur {
   syntax: "*";
@@ -728,6 +788,14 @@ button {
   initial-value: 100%;
 }
 @property --tw-drop-shadow-size {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-tracking {
   syntax: "*";
   inherits: false;
 }
@@ -805,8 +873,7 @@ button {
       --tw-skew-x: initial;
       --tw-skew-y: initial;
       --tw-border-style: solid;
-      --tw-font-weight: initial;
-      --tw-tracking: initial;
+      --tw-outline-style: solid;
       --tw-blur: initial;
       --tw-brightness: initial;
       --tw-contrast: initial;
@@ -820,6 +887,8 @@ button {
       --tw-drop-shadow-color: initial;
       --tw-drop-shadow-alpha: 100%;
       --tw-drop-shadow-size: initial;
+      --tw-font-weight: initial;
+      --tw-tracking: initial;
       --tw-shadow: 0 0 #0000;
       --tw-shadow-color: initial;
       --tw-shadow-alpha: 100%;
