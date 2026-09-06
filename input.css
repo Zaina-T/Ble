@@ -261,6 +261,7 @@ button {
     @apply max-[1025px]:text-sm w-85 h-10;
 }
 
+/*Start of Pastries Page*/
 .pastries_description_det {
     @apply text-center justify-center items-center flex-col pt-17.5;
 }
@@ -298,3 +299,39 @@ button {
     max-[770px]:grid-cols-1;
     @apply px-16;
 }
+/*Start of Pastries Page*/
+
+/*Start of Cookies Page*/
+.cookies_description_det {
+    @apply text-center justify-center items-center flex-col pt-17.5;
+}
+
+.cookies_heading h2 {
+    @apply pb-6 
+    text-primary-green
+    tracking-[1.6px]
+    font-bold
+    text-lg;
+}
+
+.cookies_brief p {
+    @apply px-[293.47px]
+    text-price;
+    @apply max-[980px]:text-sm max-[980px]:px-70
+           max-[895px]:text-sm max-[895px]:px-62.5
+           max-[805px]:text-sm max-[805px]:px-52.5
+           max-[770px]:text-xs max-[770px]:px-50
+           max-[710px]:text-xs max-[710px]:px-42.5
+           max-[645px]:text-xs max-[645px]:px-37.5
+           max-[590px]:text-xs max-[590px]:px-27.5
+           max-[530px]:text-xs max-[530px]:px-25;
+}
+
+.cookies_motivation p {
+    @apply pt-4
+    text-primary-green
+    font-shadows
+    font-medium;
+}
+
+/*End of Cookies Page*/

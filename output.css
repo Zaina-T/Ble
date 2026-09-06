@@ -9,7 +9,6 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-amber-50: oklch(98.7% 0.022 95.277);
-    --color-amber-400: oklch(82.8% 0.189 84.429);
     --color-white: #fff;
     --spacing: 0.25rem;
     --container-lg: 32rem;
@@ -304,9 +303,6 @@
       border-color: color-mix(in oklab, var(--color-line) 20%, transparent);
     }
   }
-  .bg-amber-400 {
-    background-color: var(--color-amber-400);
-  }
   .bg-background-fill {
     background-color: var(--color-background-fill);
   }
@@ -354,9 +350,6 @@
   }
   .pb-30 {
     padding-bottom: calc(var(--spacing) * 30);
-  }
-  .pb-\[120px\] {
-    padding-bottom: 120px;
   }
   .font-eb-garamond {
     font-family: var(--font-eb-garamond);
@@ -837,6 +830,90 @@ button {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
   padding-inline: calc(var(--spacing) * 16);
+}
+.cookies_description_det {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: calc(var(--spacing) * 17.5);
+  text-align: center;
+}
+.cookies_heading h2 {
+  padding-bottom: calc(var(--spacing) * 6);
+  font-size: var(--text-lg);
+  line-height: var(--tw-leading, var(--text-lg--line-height));
+  --tw-font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-bold);
+  --tw-tracking: 1.6px;
+  letter-spacing: 1.6px;
+  color: var(--color-primary-green);
+}
+.cookies_brief p {
+  padding-inline: 293.47px;
+  color: var(--color-price);
+  @media (width < 980px) {
+    padding-inline: calc(var(--spacing) * 70);
+  }
+  @media (width < 980px) {
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+  @media (width < 895px) {
+    padding-inline: calc(var(--spacing) * 62.5);
+  }
+  @media (width < 895px) {
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+  @media (width < 805px) {
+    padding-inline: calc(var(--spacing) * 52.5);
+  }
+  @media (width < 805px) {
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+  @media (width < 770px) {
+    padding-inline: calc(var(--spacing) * 50);
+  }
+  @media (width < 770px) {
+    font-size: var(--text-xs);
+    line-height: var(--tw-leading, var(--text-xs--line-height));
+  }
+  @media (width < 710px) {
+    padding-inline: calc(var(--spacing) * 42.5);
+  }
+  @media (width < 710px) {
+    font-size: var(--text-xs);
+    line-height: var(--tw-leading, var(--text-xs--line-height));
+  }
+  @media (width < 645px) {
+    padding-inline: calc(var(--spacing) * 37.5);
+  }
+  @media (width < 645px) {
+    font-size: var(--text-xs);
+    line-height: var(--tw-leading, var(--text-xs--line-height));
+  }
+  @media (width < 590px) {
+    padding-inline: calc(var(--spacing) * 27.5);
+  }
+  @media (width < 590px) {
+    font-size: var(--text-xs);
+    line-height: var(--tw-leading, var(--text-xs--line-height));
+  }
+  @media (width < 530px) {
+    padding-inline: calc(var(--spacing) * 25);
+  }
+  @media (width < 530px) {
+    font-size: var(--text-xs);
+    line-height: var(--tw-leading, var(--text-xs--line-height));
+  }
+}
+.cookies_motivation p {
+  padding-top: calc(var(--spacing) * 4);
+  font-family: var(--font-shadows);
+  --tw-font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-primary-green);
 }
 @property --tw-rotate-x {
   syntax: "*";
