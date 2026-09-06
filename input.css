@@ -303,7 +303,7 @@ button {
 
 /*Start of Cookies Page*/
 .cookies_description_det {
-    @apply text-center justify-center items-center flex-col pt-17.5;
+    @apply text-center justify-center items-center flex-col pt-16;
 }
 
 .cookies_heading h2 {
@@ -328,10 +328,16 @@ button {
 }
 
 .cookies_motivation p {
-    @apply pt-4
+    @apply pt-4 
     text-primary-green
     font-shadows
     font-medium;
 }
 
+.cookies_cards_display {
+    @apply grid grid-cols-3 gap-6
+    max-[1025px]:grid-cols-2
+    max-[770px]:grid-cols-1;
+    @apply px-16;
+}
 /*End of Cookies Page*/

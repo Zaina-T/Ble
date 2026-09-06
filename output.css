@@ -248,6 +248,9 @@
   .h-16 {
     height: calc(var(--spacing) * 16);
   }
+  .h-67 {
+    height: calc(var(--spacing) * 67);
+  }
   .h-92 {
     height: calc(var(--spacing) * 92);
   }
@@ -835,7 +838,7 @@ button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: calc(var(--spacing) * 17.5);
+  padding-top: calc(var(--spacing) * 16);
   text-align: center;
 }
 .cookies_heading h2 {
@@ -914,6 +917,18 @@ button {
   --tw-font-weight: var(--font-weight-medium);
   font-weight: var(--font-weight-medium);
   color: var(--color-primary-green);
+}
+.cookies_cards_display {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: calc(var(--spacing) * 6);
+  @media (width < 1025px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  @media (width < 770px) {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  padding-inline: calc(var(--spacing) * 16);
 }
 @property --tw-rotate-x {
   syntax: "*";
