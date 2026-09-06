@@ -31,6 +31,7 @@
     --text-5xl: 3rem;
     --text-5xl--line-height: 1;
     --font-weight-normal: 400;
+    --font-weight-medium: 500;
     --font-weight-bold: 700;
     --radius-xs: 0.125rem;
     --radius-lg: 0.5rem;
@@ -41,6 +42,7 @@
     --default-mono-font-family: var(--font-mono);
     --font-hanken-grotesk: "hanken grotesk";
     --font-eb-garamond: "eb garamond";
+    --font-shadows: "Shadows Into Light";
     --color-primary-green: #4A5D23;
     --color-fourth-black: #1A1A1A;
     --color-background-fill: #FCF9F8;
@@ -245,6 +247,9 @@
   }
   .h-16 {
     height: calc(var(--spacing) * 16);
+  }
+  .h-92 {
+    height: calc(var(--spacing) * 92);
   }
   .h-px {
     height: 1px;
@@ -733,6 +738,83 @@ button {
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));
   }
+}
+.pastries_description_det {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: calc(var(--spacing) * 17.5);
+  text-align: center;
+}
+.pastries_heading h2 {
+  padding-bottom: calc(var(--spacing) * 6);
+  font-size: var(--text-lg);
+  line-height: var(--tw-leading, var(--text-lg--line-height));
+  --tw-font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-bold);
+  --tw-tracking: 1.6px;
+  letter-spacing: 1.6px;
+  color: var(--color-primary-green);
+}
+.pastries_brief p {
+  padding-inline: 293.47px;
+  color: var(--color-price);
+  @media (width < 980px) {
+    padding-inline: calc(var(--spacing) * 70);
+  }
+  @media (width < 980px) {
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+  @media (width < 895px) {
+    padding-inline: calc(var(--spacing) * 62.5);
+  }
+  @media (width < 895px) {
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+  @media (width < 835px) {
+    padding-inline: calc(var(--spacing) * 57.5);
+  }
+  @media (width < 835px) {
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+  @media (width < 770px) {
+    padding-inline: calc(var(--spacing) * 52.5);
+  }
+  @media (width < 770px) {
+    font-size: var(--text-xs);
+    line-height: var(--tw-leading, var(--text-xs--line-height));
+  }
+  @media (width < 710px) {
+    padding-inline: calc(var(--spacing) * 42.5);
+  }
+  @media (width < 710px) {
+    font-size: var(--text-xs);
+    line-height: var(--tw-leading, var(--text-xs--line-height));
+  }
+  @media (width < 625px) {
+    padding-inline: calc(var(--spacing) * 37.5);
+  }
+  @media (width < 625px) {
+    font-size: var(--text-xs);
+    line-height: var(--tw-leading, var(--text-xs--line-height));
+  }
+  @media (width < 530px) {
+    padding-inline: calc(var(--spacing) * 25);
+  }
+  @media (width < 530px) {
+    font-size: var(--text-xs);
+    line-height: var(--tw-leading, var(--text-xs--line-height));
+  }
+}
+.pastry_motivation p {
+  padding-top: calc(var(--spacing) * 4);
+  font-family: var(--font-shadows);
+  --tw-font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-primary-green);
 }
 @property --tw-rotate-x {
   syntax: "*";
