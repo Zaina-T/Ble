@@ -291,3 +291,10 @@ button {
     font-shadows
     font-medium;
 }
+
+.pastries_cards_display {
+    @apply grid grid-cols-3 gap-6
+    max-[1025px]:grid-cols-2
+    max-[770px]:grid-cols-1;
+    @apply px-16;
+}
