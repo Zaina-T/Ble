@@ -340,4 +340,48 @@ button {
     max-[770px]:grid-cols-1;
     @apply px-16;
 }
+
+.build_box img {
+    @apply rounded-lg
+    shadow-[0_1px_2px_0_rgba(0,0,0,0.5)];
+}
+
+.build_your_box_det {
+    @apply absolute z-10 flex flex-col 
+    w-[510.2px] h-66
+    p-12 top-4.5 left-0;
+}
+
+.build_your_box h2 {
+    @apply w-[417.2px] h-6
+    text-primary-green
+    font-shadows tracking-[1.2px]
+    text-2xl;
+}
+
+.box_description {
+    @apply w-[414.2px] h-16
+     text-price
+     pt-4 pb-4;
+}
+
+.build_your_box button {
+    @apply absolute bg-primary-green mt-4 mb-12 
+    w-[219.64px] h-12
+    px-8 py-3
+    shadow-[0_1px_2px_0_rgba(0,0,0,0.5)]
+    rounded-xl
+    left-12 top-42;
+}
+
+.build_your_box button p {
+    @apply 
+    font-eb-garamond
+    text-white
+    w-[155.64px] h-6
+    flex items-center justify-center
+    text-sm;
+}
+
+
 /*End of Cookies Page*/
