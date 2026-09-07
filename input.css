@@ -350,6 +350,10 @@ button {
     @apply absolute z-10 flex flex-col 
     w-[510.2px] h-66
     p-12 top-4.5 left-0;
+    
+    @apply max-[1025px]:top-0;
+    @apply max-[770px]:top-0;
+    
 }
 
 .build_your_box h2 {
@@ -357,21 +361,55 @@ button {
     text-primary-green
     font-shadows tracking-[1.2px]
     text-2xl;
+
+    @apply max-[1025px]:text-xl 
+           max-[1025px]:h-4;
+
+    @apply max-[770px]:text-lg 
+           max-[770px]:h-3;  
+           
+    @apply max-[625px]:text-sm
+           max-[625px]:h-2;        
 }
 
 .box_description {
     @apply w-[414.2px] h-16
      text-price
      pt-4 pb-4;
+     
+     @apply max-[1025px]:text-sm 
+            max-[1025px]:pb-3 
+            max-[1025px]:h-10;
+
+    @apply  max-[770px]:text-sm 
+            max-[770px]:pb-3 
+            max-[770px]:h-10;  
+            
+    @apply  max-[625px]:text-xs 
+            max-[625px]:pb-3 
+            max-[625px]:h-10;        
 }
 
 .build_your_box button {
-    @apply absolute bg-primary-green mt-4 mb-12 
+    @apply absolute bg-primary-green 
+    mt-4 mb-12 
     w-[219.64px] h-12
     px-8 py-3
     shadow-[0_1px_2px_0_rgba(0,0,0,0.5)]
     rounded-xl
     left-12 top-42;
+
+    @apply max-[1025px]:top-30
+           max-[1025px]:w-42.5
+           max-[1025px]:h-9;
+
+    @apply max-[770px]:top-27.5
+           max-[770px]:w-37.5
+           max-[770px]:h-8; 
+           
+    @apply max-[625px]:top-25
+           max-[625px]:w-37.5
+           max-[625px]:h-7;       
 }
 
 .build_your_box button p {
@@ -381,7 +419,13 @@ button {
     w-[155.64px] h-6
     flex items-center justify-center
     text-sm;
+
+    @apply max-[1025px]:w-36.25 
+           max-[1025px]:h-6 
+           max-[1025px]:text-xs;
+
+     @apply max-[625px]:w-36.25 
+            max-[625px]:h-6 
+            max-[625px]:text-[10px];       
 }
-
-
 /*End of Cookies Page*/

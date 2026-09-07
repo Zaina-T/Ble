@@ -945,6 +945,12 @@ button {
   width: 510.2px;
   flex-direction: column;
   padding: calc(var(--spacing) * 12);
+  @media (width < 1025px) {
+    top: 0px;
+  }
+  @media (width < 770px) {
+    top: 0px;
+  }
 }
 .build_your_box h2 {
   height: calc(var(--spacing) * 6);
@@ -955,6 +961,27 @@ button {
   --tw-tracking: 1.2px;
   letter-spacing: 1.2px;
   color: var(--color-primary-green);
+  @media (width < 1025px) {
+    height: calc(var(--spacing) * 4);
+  }
+  @media (width < 1025px) {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
+  @media (width < 770px) {
+    height: calc(var(--spacing) * 3);
+  }
+  @media (width < 770px) {
+    font-size: var(--text-lg);
+    line-height: var(--tw-leading, var(--text-lg--line-height));
+  }
+  @media (width < 625px) {
+    height: calc(var(--spacing) * 2);
+  }
+  @media (width < 625px) {
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
 }
 .box_description {
   height: calc(var(--spacing) * 16);
@@ -962,6 +989,36 @@ button {
   padding-top: calc(var(--spacing) * 4);
   padding-bottom: calc(var(--spacing) * 4);
   color: var(--color-price);
+  @media (width < 1025px) {
+    height: calc(var(--spacing) * 10);
+  }
+  @media (width < 1025px) {
+    padding-bottom: calc(var(--spacing) * 3);
+  }
+  @media (width < 1025px) {
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+  @media (width < 770px) {
+    height: calc(var(--spacing) * 10);
+  }
+  @media (width < 770px) {
+    padding-bottom: calc(var(--spacing) * 3);
+  }
+  @media (width < 770px) {
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+  @media (width < 625px) {
+    height: calc(var(--spacing) * 10);
+  }
+  @media (width < 625px) {
+    padding-bottom: calc(var(--spacing) * 3);
+  }
+  @media (width < 625px) {
+    font-size: var(--text-xs);
+    line-height: var(--tw-leading, var(--text-xs--line-height));
+  }
 }
 .build_your_box button {
   position: absolute;
@@ -977,6 +1034,33 @@ button {
   padding-block: calc(var(--spacing) * 3);
   --tw-shadow: 0 1px 2px 0 var(--tw-shadow-color, rgba(0,0,0,0.5));
   box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  @media (width < 1025px) {
+    top: calc(var(--spacing) * 30);
+  }
+  @media (width < 1025px) {
+    height: calc(var(--spacing) * 9);
+  }
+  @media (width < 1025px) {
+    width: calc(var(--spacing) * 42.5);
+  }
+  @media (width < 770px) {
+    top: calc(var(--spacing) * 27.5);
+  }
+  @media (width < 770px) {
+    height: calc(var(--spacing) * 8);
+  }
+  @media (width < 770px) {
+    width: calc(var(--spacing) * 37.5);
+  }
+  @media (width < 625px) {
+    top: calc(var(--spacing) * 25);
+  }
+  @media (width < 625px) {
+    height: calc(var(--spacing) * 7);
+  }
+  @media (width < 625px) {
+    width: calc(var(--spacing) * 37.5);
+  }
 }
 .build_your_box button p {
   display: flex;
@@ -988,6 +1072,25 @@ button {
   font-size: var(--text-sm);
   line-height: var(--tw-leading, var(--text-sm--line-height));
   color: var(--color-white);
+  @media (width < 1025px) {
+    height: calc(var(--spacing) * 6);
+  }
+  @media (width < 1025px) {
+    width: calc(var(--spacing) * 36.25);
+  }
+  @media (width < 1025px) {
+    font-size: var(--text-xs);
+    line-height: var(--tw-leading, var(--text-xs--line-height));
+  }
+  @media (width < 625px) {
+    height: calc(var(--spacing) * 6);
+  }
+  @media (width < 625px) {
+    width: calc(var(--spacing) * 36.25);
+  }
+  @media (width < 625px) {
+    font-size: 10px;
+  }
 }
 @property --tw-rotate-x {
   syntax: "*";
