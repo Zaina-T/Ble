@@ -466,4 +466,53 @@ button {
     max-[770px]:grid-cols-1;
     @apply px-16;
 }
+
+.Custom_description_det {
+  @apply flex mx-auto justify-center items-center flex-col
+  w-2xl h-30;
+}
+
+.Custom_description h2 {
+    @apply text-3xl;
+}
+
+.Custom_description p {
+    @apply pt-4 text-center text-base;
+}
+
+.custom_motivation {
+    @apply pt-2 
+    text-primary-green
+    font-shadows
+    font-medium
+    tracking-[1.2px];
+}
+
+.events_details {
+    @apply bg-special-background  
+             p-8 mt-4
+             rounded-xl
+             w-120 h-44.5;
+}
+
+.event_picture img {
+    @apply shadow-[0_1px_2px_0_rgba(0,0,0,0.5)] rounded-xl;
+}
+
+.event_picture button {
+    @apply mt-4
+    bg-primary-green
+    text-white
+    rounded-xl
+    font-eb-garamond
+    shadow-[0_1px_2px_0_rgba(0,0,0,0.5)];
+}
+
+.events p {
+    @apply pt-4;
+}
+
+.events h2 {
+    @apply text-lg;
+}
 /*End of Cakes Page*/
