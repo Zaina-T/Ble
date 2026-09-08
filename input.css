@@ -572,6 +572,10 @@ button {
     tracking-[1.6px];
 }
 
+.product_picture {
+    @apply max-[1025px]:mb-12;
+}
+
 .product_discription_details {
     @apply flex flex-col items-start text-left;
 }
@@ -585,10 +589,10 @@ button {
 }
 
 .name_and_price p {
-    @apply text-primary-green
+    @apply text-black
             font-eb-garamond
             text-lg
-            font-medium
+            font-bold
             pb-12;
 }
 
@@ -642,5 +646,9 @@ button {
     @apply text-price;
 }
 
-
+.card_responsive {
+    @apply flex gap-16 items-start;
+    @apply max-[1025px]:flex-col
+           max-[1025px]:items-center;
+}
 /*End of Porduct Page*/

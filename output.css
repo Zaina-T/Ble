@@ -242,8 +242,8 @@
   .mt-30 {
     margin-top: calc(var(--spacing) * 30);
   }
-  .mb-30 {
-    margin-bottom: calc(var(--spacing) * 30);
+  .mb-62 {
+    margin-bottom: calc(var(--spacing) * 62);
   }
   .ml-auto {
     margin-left: auto;
@@ -1351,6 +1351,11 @@ button {
   --tw-shadow: 0 1px 2px 0 var(--tw-shadow-color, rgba(0,0,0,0.5));
   box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
 }
+@media (width < 1025px) {
+  .product_picture {
+    margin-bottom: calc(var(--spacing) * 12);
+  }
+}
 .product_discription_details {
   display: flex;
   flex-direction: column;
@@ -1369,9 +1374,9 @@ button {
   font-family: var(--font-eb-garamond);
   font-size: var(--text-lg);
   line-height: var(--tw-leading, var(--text-lg--line-height));
-  --tw-font-weight: var(--font-weight-medium);
-  font-weight: var(--font-weight-medium);
-  color: var(--color-primary-green);
+  --tw-font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-black);
 }
 .product_explain p {
   color: var(--color-price);
@@ -1423,6 +1428,17 @@ button {
 }
 .allergens_details p {
   color: var(--color-price);
+}
+.card_responsive {
+  display: flex;
+  align-items: flex-start;
+  gap: calc(var(--spacing) * 16);
+  @media (width < 1025px) {
+    flex-direction: column;
+  }
+  @media (width < 1025px) {
+    align-items: center;
+  }
 }
 @property --tw-rotate-x {
   syntax: "*";
