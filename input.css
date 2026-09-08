@@ -469,15 +469,29 @@ button {
 
 .Custom_description_det {
   @apply flex mx-auto justify-center items-center flex-col
-  w-2xl h-30;
+         w-2xl h-30;
+  @apply max-[710px]:w-xl
+         max-[660px]:w-lg; 
+}
+
+.position {
+    @apply flex justify-center gap-18 max-[660px]:gap-14;
+}
+
+.padding {
+    @apply pl-16 max-[660px]:pl-12;
 }
 
 .Custom_description h2 {
     @apply text-3xl;
+    @apply max-[710px]:text-2xl
+           max-[660px]:text-xl;
 }
 
 .Custom_description p {
     @apply pt-4 text-center text-base;
+    @apply max-[710px]:text-sm
+           max-[660px]:text-xs;
 }
 
 .custom_motivation {
@@ -493,6 +507,11 @@ button {
              p-8 mt-4
              rounded-xl
              w-120 h-44.5;
+           
+    @apply max-[1025px]:h-35 max-[1025px]:w-95
+           max-[770px]:h-30 max-[770px]:w-85 
+           max-[710px]:h-30 max-[710px]:w-75
+           max-[660px]:h-27 max-[660px]:w-70;   
 }
 
 .event_picture img {
@@ -510,9 +529,15 @@ button {
 
 .events p {
     @apply pt-4;
+    @apply max-[1025px]:text-sm
+           max-[770px]:text-xs
+           max-[710px]:pt-2
+           max-[660px]:pt-1;
 }
 
 .events h2 {
     @apply text-lg;
+    @apply max-[1025px]:text-base
+           max-[660px]:text-sm;
 }
 /*End of Cakes Page*/
