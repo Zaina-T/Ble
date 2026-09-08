@@ -541,3 +541,106 @@ button {
            max-[660px]:text-sm;
 }
 /*End of Cakes Page*/
+
+/*Start of Porduct Page*/
+.discover_details {
+    @apply  mt-25 flex justify-center mb-25;
+}
+
+.discover h2 {
+    @apply font-shadows
+           text-primary-green
+           tracking-[1.2px]
+           font-medium
+           text-xl;
+}
+
+.product_picture img {
+    @apply rounded-lg
+           shadow-[0_20px_25px_-5px_rgba(82,101,42,0.05)]
+           shadow-[0_8px_10px_-6px_rgba(82,101,42,0.05)];
+}
+
+.product_picture button {
+    @apply mt-8
+    bg-primary-green
+    text-white
+    rounded-xl
+    font-hanken-grotesk
+    shadow-[0_1px_2px_0_rgba(0,0,0,0.5)]
+    absolute !w-92 !h-12 flex gap-2
+    tracking-[1.6px];
+}
+
+.product_discription_details {
+    @apply flex flex-col items-start text-left;
+}
+
+.name_and_price_det {
+    @apply w-153.5 h-30;
+}
+
+.name_and_price h1 {
+    @apply pb-4;
+}
+
+.name_and_price p {
+    @apply text-primary-green
+            font-eb-garamond
+            text-lg
+            font-medium
+            pb-12;
+}
+
+.product_explain p {
+   @apply text-price;
+
+}
+
+.process_details {
+    @apply flex flex-col gap-1;
+}
+
+.process_details h3 {
+    @apply font-hanken-grotesk
+           tracking-[1.6px]
+           text-black
+           font-medium;
+}
+
+.process_details p {
+    @apply text-price;
+}
+
+.ingredients_details {
+    @apply flex flex-col gap-1;
+}
+
+.ingredients_details h3 {
+    @apply font-hanken-grotesk
+           tracking-[1.6px]
+           text-black
+           font-medium;
+}
+
+.ingredients_details p {
+    @apply text-price;
+}
+
+.allergens_details {
+    @apply flex flex-col gap-1;
+}
+
+.allergens_details h3 {
+    @apply font-hanken-grotesk
+           tracking-[1.6px]
+           text-black
+           font-medium;
+}
+
+.allergens_details p {
+    @apply text-price;
+}
+
+
+/*End of Porduct Page*/
