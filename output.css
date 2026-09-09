@@ -9,6 +9,7 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-amber-50: oklch(98.7% 0.022 95.277);
+    --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -37,6 +38,7 @@
     --font-weight-medium: 500;
     --font-weight-bold: 700;
     --radius-xs: 0.125rem;
+    --radius-sm: 0.25rem;
     --radius-lg: 0.5rem;
     --radius-xl: 0.75rem;
     --radius-2xl: 1rem;
@@ -215,6 +217,15 @@
   .inset-0 {
     inset: 0px;
   }
+  .top-1 {
+    top: var(--spacing);
+  }
+  .top-1\/2 {
+    top: calc(1 / 2 * 100%);
+  }
+  .right-4 {
+    right: calc(var(--spacing) * 4);
+  }
   .container {
     width: 100%;
     @media (width >= 40rem) {
@@ -239,6 +250,12 @@
   .mt-1 {
     margin-top: var(--spacing);
   }
+  .mt-8 {
+    margin-top: calc(var(--spacing) * 8);
+  }
+  .mt-10 {
+    margin-top: calc(var(--spacing) * 10);
+  }
   .mt-30 {
     margin-top: calc(var(--spacing) * 30);
   }
@@ -254,6 +271,9 @@
   .hidden {
     display: none;
   }
+  .table {
+    display: table;
+  }
   .h-12 {
     height: calc(var(--spacing) * 12);
   }
@@ -262,6 +282,9 @@
   }
   .h-54 {
     height: calc(var(--spacing) * 54);
+  }
+  .h-63 {
+    height: calc(var(--spacing) * 63);
   }
   .h-63\.25 {
     height: calc(var(--spacing) * 63.25);
@@ -287,6 +310,9 @@
   .w-88 {
     width: calc(var(--spacing) * 88);
   }
+  .w-153 {
+    width: calc(var(--spacing) * 153);
+  }
   .w-153\.5 {
     width: calc(var(--spacing) * 153.5);
   }
@@ -296,8 +322,22 @@
   .w-full {
     width: 100%;
   }
+  .border-collapse {
+    border-collapse: collapse;
+  }
+  .-translate-y-1 {
+    --tw-translate-y: calc(var(--spacing) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .-translate-y-1\/2 {
+    --tw-translate-y: calc(calc(1 / 2 * 100%) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+  }
+  .resize {
+    resize: both;
   }
   .flex-col {
     flex-direction: column;
@@ -329,12 +369,22 @@
   .gap-10 {
     gap: calc(var(--spacing) * 10);
   }
-  .gap-16 {
-    gap: calc(var(--spacing) * 16);
+  .rounded-lg {
+    border-radius: var(--radius-lg);
+  }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
   }
   .border-t {
     border-top-style: var(--tw-border-style);
     border-top-width: 1px;
+  }
+  .border-gray-300 {
+    border-color: var(--color-gray-300);
+  }
+  .border-line {
+    border-color: var(--color-line);
   }
   .border-line\/20 {
     border-color: color-mix(in srgb, #BED58E 20%, transparent);
@@ -344,6 +394,9 @@
   }
   .bg-background-fill {
     background-color: var(--color-background-fill);
+  }
+  .bg-hero-filling {
+    background-color: var(--color-hero-filling);
   }
   .bg-hero-filling\/40 {
     background-color: color-mix(in srgb, #1C1B1B 40%, transparent);
@@ -356,6 +409,9 @@
   }
   .p-6 {
     padding: calc(var(--spacing) * 6);
+  }
+  .px-4 {
+    padding-inline: calc(var(--spacing) * 4);
   }
   .px-16 {
     padding-inline: calc(var(--spacing) * 16);
@@ -405,8 +461,18 @@
   .text-primary-green {
     color: var(--color-primary-green);
   }
+  .underline {
+    text-decoration-line: underline;
+  }
   .opacity-60 {
     opacity: 60%;
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
+  }
+  .filter {
+    filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
   }
   @media (width < 620px) {
     .max-\[620px\]\:gap-4 {
@@ -1440,6 +1506,126 @@ button {
     align-items: center;
   }
 }
+.account_details {
+  margin-inline: calc(var(--spacing) * 88);
+  margin-block: calc(var(--spacing) * 16);
+  display: flex;
+  justify-content: center;
+  border-radius: var(--radius-lg);
+  background-color: var(--color-white);
+  --tw-shadow: 0 8px 10px -6px var(--tw-shadow-color, rgba(0,0,0,0.10));
+  --tw-shadow: 0 20px 25px -5px var(--tw-shadow-color, rgba(0,0,0,0.10));
+  box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+}
+.box_details {
+  display: flex;
+  height: calc(var(--spacing) * 164.75);
+  width: var(--container-xl);
+  flex-direction: column;
+  justify-content: center;
+  padding: calc(var(--spacing) * 12);
+}
+.login_details {
+  margin-bottom: calc(var(--spacing) * 8);
+  display: flex;
+  height: calc(var(--spacing) * 12.5);
+  width: calc(var(--spacing) * 119.5);
+  align-items: center;
+  justify-content: center;
+  gap: calc(var(--spacing) * 8);
+  padding-bottom: calc(var(--spacing) * 4);
+}
+.sign_in a {
+  font-family: var(--font-eb-garamond);
+  font-size: 22px;
+  --tw-font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-medium);
+  --tw-tracking: 0.55px;
+  letter-spacing: 0.55px;
+  color: var(--color-primary-green);
+}
+.create_acc a {
+  font-family: var(--font-eb-garamond);
+  font-size: 22px;
+  --tw-font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-normal);
+  --tw-tracking: 0.55px;
+  letter-spacing: 0.55px;
+  color: var(--color-price);
+}
+.google_login p {
+  margin-bottom: calc(var(--spacing) * 8);
+  display: flex;
+  justify-content: center;
+  padding-top: calc(var(--spacing) * 6);
+  font-family: var(--font-hanken-grotesk);
+  font-size: 11px;
+  --tw-font-weight: var(--font-weight-normal);
+  font-weight: var(--font-weight-normal);
+  --tw-tracking: 1.1px;
+  letter-spacing: 1.1px;
+  color: var(--color-price);
+}
+.user_email_det {
+  margin-bottom: calc(var(--spacing) * 6);
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--spacing) * 2);
+}
+.user_password_det {
+  margin-bottom: calc(var(--spacing) * 6);
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--spacing) * 2);
+}
+.remember_det {
+  margin-bottom: calc(var(--spacing) * 6);
+  display: flex;
+  gap: calc(var(--spacing) * 2);
+  font-family: var(--font-hanken-grotesk);
+  font-size: 12px;
+  --tw-font-weight: var(--font-weight-medium);
+  font-weight: var(--font-weight-medium);
+  --tw-tracking: 0.36px;
+  letter-spacing: 0.36px;
+  color: var(--color-price);
+}
+.user_info_form label {
+  font-family: var(--font-hanken-grotesk);
+}
+.sign_in_button button {
+  margin-bottom: calc(var(--spacing) * 8);
+  height: calc(var(--spacing) * 12);
+  width: calc(var(--spacing) * 119.5);
+  border-radius: var(--radius-sm);
+  background-color: var(--color-primary-green);
+  font-family: var(--font-hanken-grotesk);
+  --tw-tracking: 0.8px;
+  letter-spacing: 0.8px;
+  color: var(--color-white);
+}
+.protect p {
+  font-family: var(--font-hanken-grotesk);
+  font-size: 11px;
+  --tw-tracking: 0.28px;
+  letter-spacing: 0.28px;
+  color: var(--color-price);
+}
+@property --tw-translate-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
 @property --tw-rotate-x {
   syntax: "*";
   inherits: false;
@@ -1465,13 +1651,10 @@ button {
   inherits: false;
   initial-value: solid;
 }
-@property --tw-font-weight {
+@property --tw-outline-style {
   syntax: "*";
   inherits: false;
-}
-@property --tw-tracking {
-  syntax: "*";
-  inherits: false;
+  initial-value: solid;
 }
 @property --tw-blur {
   syntax: "*";
@@ -1523,6 +1706,14 @@ button {
   initial-value: 100%;
 }
 @property --tw-drop-shadow-size {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-tracking {
   syntax: "*";
   inherits: false;
 }
@@ -1594,14 +1785,16 @@ button {
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
+      --tw-translate-x: 0;
+      --tw-translate-y: 0;
+      --tw-translate-z: 0;
       --tw-rotate-x: initial;
       --tw-rotate-y: initial;
       --tw-rotate-z: initial;
       --tw-skew-x: initial;
       --tw-skew-y: initial;
       --tw-border-style: solid;
-      --tw-font-weight: initial;
-      --tw-tracking: initial;
+      --tw-outline-style: solid;
       --tw-blur: initial;
       --tw-brightness: initial;
       --tw-contrast: initial;
@@ -1615,6 +1808,8 @@ button {
       --tw-drop-shadow-color: initial;
       --tw-drop-shadow-alpha: 100%;
       --tw-drop-shadow-size: initial;
+      --tw-font-weight: initial;
+      --tw-tracking: initial;
       --tw-shadow: 0 0 #0000;
       --tw-shadow-color: initial;
       --tw-shadow-alpha: 100%;

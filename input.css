@@ -652,3 +652,88 @@ button {
            max-[1025px]:items-center;
 }
 /*End of Porduct Page*/
+
+/*Start of Account Page*/
+.account_details {
+    @apply flex justify-center 
+           my-16 mx-88
+           bg-white
+           rounded-lg
+           shadow-[0_8px_10px_-6px_rgba(0,0,0,0.10)]
+           shadow-[0_20px_25px_-5px_rgba(0,0,0,0.10)];
+}
+
+.box_details {
+    @apply flex justify-center flex-col
+           w-xl h-164.75
+           p-12;
+}
+
+.login_details {
+    @apply flex justify-center items-center gap-8 
+           w-119.5 h-12.5 pb-4 mb-8;
+}
+
+.sign_in a {
+    @apply font-eb-garamond
+    font-medium
+    text-[22px]
+    tracking-[0.55px]
+    text-primary-green;
+}
+
+.create_acc a {
+    @apply font-eb-garamond
+    font-normal
+    text-[22px]
+    tracking-[0.55px]
+    text-price;
+}
+
+.google_login p {
+    @apply pt-6 flex justify-center mb-8
+           font-hanken-grotesk
+           font-normal
+           text-[11px]
+           tracking-[1.1px]
+           text-price;
+}
+
+.user_email_det {
+    @apply flex flex-col gap-2 mb-6;
+}
+
+.user_password_det {
+    @apply flex flex-col gap-2 mb-6;
+}
+
+.remember_det {
+    @apply flex gap-2 mb-6
+           text-price
+           font-hanken-grotesk
+           tracking-[0.36px]
+           font-medium
+           text-[12px];
+}
+
+.user_info_form label {
+    @apply font-hanken-grotesk;
+}
+
+.sign_in_button button {
+    @apply bg-primary-green
+           w-119.5 h-12
+           text-white
+           rounded-sm
+           font-hanken-grotesk
+           tracking-[0.8px]
+           mb-8;
+}
+
+.protect p {
+    @apply font-hanken-grotesk
+    text-[11px]
+    tracking-[0.28px]
+    text-price;
+}
+/*End of Account Page*/
