@@ -737,3 +737,48 @@ button {
     text-price;
 }
 /*End of Account Page*/
+
+/*Start of hover+transition*/
+.list a:hover {
+    color: black;
+}
+
+.list a {
+    @apply transition-all
+           duration-500
+           delay-300
+           hover:text-primary-green
+           hover:font-medium
+           hover:text-lg;
+}
+
+.favorite img {
+    @apply transition-all
+           duration-500
+           delay-300
+           hover:scale-[1.2];
+}
+
+.favorite button {
+    @apply  transition-all
+            duration-500
+            delay-300
+          hover:bg-primary-green
+          hover:text-white;
+}
+
+.order_now button {
+    @apply transition-all
+            duration-500
+            delay-300
+            hover:scale-[1.1];
+ }
+
+ .card img {
+    @apply transition-all
+           duration-500
+           delay-300
+           hover:scale-[1.1];
+ }
+
+ 
